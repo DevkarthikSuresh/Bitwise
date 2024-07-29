@@ -1,6 +1,6 @@
 //Name - Devarthik Suresh
 //PRN - 23070123045
-//Aim - Performing Bitwise operations
+//Aim - Performing Bitwise set and reset.
 #include <iostream>
 using namespace std;
 
