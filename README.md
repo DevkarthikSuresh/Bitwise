@@ -3,9 +3,10 @@
 Experiment_4
 
 ## AIM - 
-To perform bitwise operations.
+To perform bitwise operations and set reset
 
 ## Theory
+### Expriment 4(a)
 Bitwise operators are used to perform operations on the binary representations of integers. They operate at the bit level and are fundamental for tasks that require efficient data manipulation, such as low-level programming, cryptography, and performance optimization. Bitwise operations are faster than arithmetic operations and can be used to implement various algorithms and data structures.
 
 ### Types of Bitwise Operators
@@ -42,7 +43,17 @@ Example:
 Example:
 5 >> 1 (binary: 0101 >> 1) results in 2 (binary: 0010).
 
+### Expriment 4(b)
+#### Binary Setting- 
+
+Setting a bit means altering the bit at a specific position to 1 while keeping other bits unchanged. This operation is useful in scenarios where specific flags or bits need to be activated.
+
+#### Binary Setting-
+
+Resetting a bit involves changing the bit at a specific position to 0 while keeping other bits unchanged. This operation is commonly used to deactivate specific flags or bits.
+
 ## Algorithm 
+### Algorithm for Expriment 4(a)
 * Start  
 * Declare two integer variables: `a` and `b`.
 
@@ -91,3 +102,32 @@ Example:
 * Compute the result of a >> 2 (right shift by 2 positions).
 * Output the result.
 * End
+
+### Algorithm for Expriment 4(a)
+
+
+1. **Start**
+
+2. **Declare Variables**
+   - `int a, i, set, reset;`
+
+3. **Prompt for and Read Input Values**
+   - Display the message `Enter the number`.
+   - Read the integer value into variable `a`.
+   - Display the message `Enter the places to shift`.
+   - Read the integer value into variable `i`.
+
+4. **Compute**
+   - Create a functionality for setting and resetting by shifting `1` left by `i` positions: `1 << i`.
+
+5. **Set the Bit**
+   - Compute the result by performing OR operation: `set = a | (1 << i)`.
+
+6. **Reset the Bit**
+   - Compute the result by performing AND operation with the inverted one: `reset = a & (~(1 << i))`.
+
+7. **Output Results**
+   - Display the result of resetting the bit: `cout << reset << endl;`.
+   - Display the result of setting the bit: `cout << set;`.
+
+8. **End**
