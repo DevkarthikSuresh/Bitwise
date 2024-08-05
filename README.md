@@ -4,7 +4,8 @@ Experiment_4
 
 ## AIM - 
 To perform bitwise operations and set reset
-
+## Software Used
+VS Code
 ## Theory
 ### Expriment 4(a)
 Bitwise operators are used to perform operations on the binary representations of integers. They operate at the bit level and are fundamental for tasks that require efficient data manipulation, such as low-level programming, cryptography, and performance optimization. Bitwise operations are faster than arithmetic operations and can be used to implement various algorithms and data structures.
